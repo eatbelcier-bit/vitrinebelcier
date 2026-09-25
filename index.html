@@ -17,15 +17,6 @@
 </style>
 </head>
 <body>
-<video id="v" muted playsinline loop autoplay></video>
-<script>
-const v = document.getElementById('v');
-fetch('video.mp4')
-  .then(r => r.blob())
-  .then(b => {
-    v.src = URL.createObjectURL(b);
-    v.play();
-  });
-</script>
+<video src="video.mp4" muted autoplay loop playsinline></video>
 </body>
 </html>
